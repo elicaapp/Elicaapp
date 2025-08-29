@@ -1,0 +1,58 @@
+### VisualStudio ###
+# Archivos específicos del usuario
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+
+# Directorios de caché/opciones de IDEs
+.vs/
+.idea/
+# .vscode/ # Descomentar si no quieres versionar la configuración de VSCode
+
+### .NET Core ###
+# Resultados de compilación
+[Bb]in/
+[Oo]bj/
+
+# Archivos generados durante la compilación
+*.log
+*.tlog
+*.trx
+*.testlogger
+*.nupkg
+*.snupkg
+
+# Carpetas de publicación
+[Pp]ublish/
+
+# Archivos temporales de Resharper y otros
+*_i.c
+*_p.c
+*_h.h
+*.ilk
+*.meta
+*.pch
+*.pdb
+*.pgc
+*.pgd
+*.rsp
+*.sbr
+*.tlb
+*.tli
+*.tlh
+*.tmp
+
+### Paquetes y Secretos ###
+# La carpeta 'packages' puede ser ignorada gracias a la restauración de paquetes de NuGet
+**/packages/*
+# No ignorar la carpeta 'build' dentro de 'packages', ya que es usada por MSBuild
+!**/packages/build/
+
+# Secretos de Dotnet
+*.secrets.json
+
+### Archivos del Sistema Operativo ###
+.DS_Store
+Thumbs.db
+
