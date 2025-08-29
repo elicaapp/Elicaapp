@@ -26,16 +26,37 @@
 - [ ] Instalar Supabase CLI
 - [ ] Configurar conexión local
 
-**Tareas Técnicas**:
-- [ ] Crear cuenta Supabase
-- [ ] Configurar proyecto con PostgreSQL 15+
-- [ ] Obtener connection string
-- [ ] Configurar variables de entorno (.env)
+**Tareas Técnicas Detalladas**:
+- [ ] Crear cuenta en Supabase Cloud (supabase.com)
+- [ ] Crear nuevo proyecto con nombre "ElicaApp"
+- [ ] Seleccionar región más cercana (us-east-1, eu-west-1, etc.)
+- [ ] Configurar contraseña de base de datos
+- [ ] Obtener connection string del proyecto
+- [ ] Instalar Supabase CLI: `npm install -g supabase`
+- [ ] Inicializar proyecto local: `supabase init`
+- [ ] Configurar variables de entorno en .env.local
+- [ ] Conectar CLI con proyecto remoto: `supabase link --project-ref [PROJECT_ID]`
+- [ ] Verificar conexión: `supabase status`
+- [ ] Crear archivo de configuración supabase/config.toml
+- [ ] Configurar estructura de carpetas para migraciones
 
 **Entregables**:
-- Proyecto Supabase configurado
-- Variables de entorno documentadas
-- CLI funcionando localmente
+- Proyecto Supabase Cloud creado y configurado
+- Supabase CLI instalado y funcionando
+- Conexión local establecida
+- Variables de entorno configuradas
+- Estructura de carpetas para migraciones creada
+- Configuración de proyecto documentada
+
+
+
+**Entregables**:
+- Proyecto Supabase Cloud creado y configurado
+- Supabase CLI instalado y funcionando
+- Conexión local establecida
+- Variables de entorno configuradas
+- Estructura de carpetas para migraciones creada
+- Configuración de proyecto documentada
 
 #### **Día 2: Esquemas Base de Datos**
 - [ ] Crear tabla de usuarios
@@ -43,16 +64,35 @@
 - [ ] Crear tabla de servicios
 - [ ] Crear tabla de citas
 
-**Tareas Técnicas**:
-- [ ] Diseñar esquema de usuarios (id, email, role, created_at, updated_at)
-- [ ] Diseñar esquema de negocios (id, name, description, owner_id, status)
-- [ ] Diseñar esquema de servicios (id, name, description, business_id, price)
-- [ ] Diseñar esquema de citas (id, user_id, service_id, business_id, datetime, status)
+**Tareas Técnicas Detalladas**:
+- [ ] Crear migración inicial: `supabase migration new initial_schema`
+- [ ] Diseñar tabla users con campos: id (uuid), email (varchar), password_hash (varchar), role (varchar), created_at (timestamp), updated_at (timestamp)
+- [ ] Diseñar tabla businesses con campos: id (uuid), name (varchar), description (text), owner_id (uuid, foreign key), status (varchar), created_at (timestamp), updated_at (timestamp)
+- [ ] Diseñar tabla services con campos: id (uuid), name (varchar), description (text), business_id (uuid, foreign key), price (decimal), duration (integer), created_at (timestamp), updated_at (timestamp)
+- [ ] Diseñar tabla appointments con campos: id (uuid), user_id (uuid, foreign key), service_id (uuid, foreign key), business_id (uuid, foreign key), datetime (timestamp), status (varchar), notes (text), created_at (timestamp), updated_at (timestamp)
+- [ ] Implementar constraints: NOT NULL, UNIQUE, CHECK
+- [ ] Crear índices para campos de búsqueda frecuente
+- [ ] Ejecutar migración: `supabase db push`
+- [ ] Verificar creación de tablas en Supabase Dashboard
+- [ ] Crear tests de conexión y consultas básicas
 
 **Entregables**:
-- Esquemas SQL creados
-- Relaciones definidas
+- Esquemas SQL creados y documentados
+- Relaciones entre tablas definidas
 - Constraints implementados
+- Índices creados para performance
+- Migración ejecutada exitosamente
+- Tablas verificadas en Supabase Dashboard
+
+
+
+**Entregables**:
+- Esquemas SQL creados y documentados
+- Relaciones entre tablas definidas
+- Constraints implementados
+- Índices creados para performance
+- Migración ejecutada exitosamente
+- Tablas verificadas en Supabase Dashboard
 
 #### **Día 3: Row Level Security (RLS)**
 - [ ] Implementar RLS en tabla usuarios
@@ -60,16 +100,37 @@
 - [ ] Implementar RLS en tabla servicios
 - [ ] Implementar RLS en tabla citas
 
-**Tareas Técnicas**:
-- [ ] Crear políticas RLS para usuarios (solo ver/editar propios datos)
-- [ ] Crear políticas RLS para negocios (owner puede ver/editar)
-- [ ] Crear políticas RLS para servicios (business owner puede gestionar)
-- [ ] Crear políticas RLS para citas (usuario ve propias, business ve de su negocio)
+**Tareas Técnicas Detalladas**:
+- [ ] Habilitar RLS en todas las tablas: `ALTER TABLE table_name ENABLE ROW LEVEL SECURITY;`
+- [ ] Crear política para tabla users: usuarios solo pueden ver/editar sus propios datos
+- [ ] Crear política para tabla businesses: propietarios pueden ver/editar sus negocios
+- [ ] Crear política para tabla services: propietarios de negocio pueden gestionar servicios
+- [ ] Crear política para tabla appointments: usuarios ven sus citas, negocios ven citas de su negocio
+- [ ] Implementar políticas con CREATE POLICY usando funciones de Supabase
+- [ ] Crear función helper para verificar propiedad de negocio
+- [ ] Crear función helper para verificar propiedad de cita
+- [ ] Testear políticas RLS con diferentes usuarios
+- [ ] Verificar que las políticas funcionan correctamente
+- [ ] Documentar todas las políticas implementadas
+- [ ] Crear tests automatizados para validar RLS
 
 **Entregables**:
 - RLS habilitado en todas las tablas
-- Políticas de seguridad implementadas
-- Tests de seguridad pasando
+- Políticas de seguridad implementadas y funcionando
+- Funciones helper creadas para verificación
+- Tests de RLS pasando
+- Políticas documentadas completamente
+- Seguridad validada con diferentes roles de usuario
+
+
+
+**Entregables**:
+- RLS habilitado en todas las tablas
+- Políticas de seguridad implementadas y funcionando
+- Funciones helper creadas para verificación
+- Tests de RLS pasando
+- Políticas documentadas completamente
+- Seguridad validada con diferentes roles de usuario
 
 #### **Día 4: Entity Framework Core**
 - [ ] Configurar DbContext
@@ -77,17 +138,37 @@
 - [ ] Configurar relaciones
 - [ ] Crear migración inicial
 
-**Tareas Técnicas**:
-- [ ] Instalar paquetes EF Core
-- [ ] Crear ApplicationDbContext
-- [ ] Mapear entidades a tablas
-- [ ] Configurar relaciones (one-to-many, many-to-many)
-- [ ] Generar migración inicial
+**Tareas Técnicas Detalladas**:
+- [ ] Instalar paquetes EF Core: Microsoft.EntityFrameworkCore, Microsoft.EntityFrameworkCore.Tools, Npgsql.EntityFrameworkCore.PostgreSQL
+- [ ] Crear clase ApplicationDbContext en el proyecto Infrastructure
+- [ ] Configurar connection string en appsettings.json
+- [ ] Crear entidades: User, Business, Service, Appointment
+- [ ] Configurar propiedades y anotaciones de entidades
+- [ ] Implementar relaciones: User -> Business (one-to-many), Business -> Service (one-to-many), User -> Appointment (one-to-many)
+- [ ] Configurar OnModelCreating con Fluent API
+- [ ] Configurar índices y constraints en entidades
+- [ ] Generar migración inicial: `dotnet ef migrations add InitialCreate`
+- [ ] Aplicar migración: `dotnet ef database update`
+- [ ] Verificar que las entidades se mapean correctamente
+- [ ] Crear tests de conexión y operaciones básicas
 
 **Entregables**:
-- DbContext configurado
-- Entidades mapeadas correctamente
-- Migración inicial generada
+- DbContext configurado y funcionando
+- Entidades EF Core creadas y mapeadas
+- Relaciones configuradas correctamente
+- Migración inicial generada y aplicada
+- Conexión a Supabase establecida
+- Tests de entidades pasando
+
+
+
+**Entregables**:
+- DbContext configurado y funcionando
+- Entidades EF Core creadas y mapeadas
+- Relaciones configuradas correctamente
+- Migración inicial generada y aplicada
+- Conexión a Supabase establecida
+- Tests de entidades pasando
 
 #### **Día 5: Testing y Validación**
 - [ ] Tests de conexión a Supabase
@@ -95,16 +176,37 @@
 - [ ] Tests de migraciones EF Core
 - [ ] Validación de performance
 
-**Tareas Técnicas**:
-- [ ] Crear tests de conexión
-- [ ] Validar políticas RLS con diferentes usuarios
-- [ ] Ejecutar migraciones en test
-- [ ] Medir tiempo de queries básicas
+**Tareas Técnicas Detalladas**:
+- [ ] Crear tests de conexión usando xUnit
+- [ ] Implementar tests para verificar conexión a Supabase
+- [ ] Crear tests para validar políticas RLS
+- [ ] Testear acceso a datos con diferentes usuarios
+- [ ] Verificar que las migraciones EF Core funcionan
+- [ ] Crear tests de integración para operaciones CRUD
+- [ ] Implementar tests de performance para queries básicas
+- [ ] Medir tiempo de respuesta de queries principales
+- [ ] Validar que los índices mejoran performance
+- [ ] Crear tests para verificar constraints de base de datos
+- [ ] Implementar tests de concurrencia básicos
+- [ ] Documentar resultados de tests y métricas de performance
 
 **Entregables**:
-- Tests pasando
-- Performance aceptable (<100ms)
-- Documentación de setup
+- Tests de conexión implementados y pasando
+- Tests de RLS implementados y validando seguridad
+- Tests de migraciones EF Core funcionando
+- Tests de performance implementados
+- Métricas de performance documentadas
+- Tests de integración funcionando
+
+
+
+**Entregables**:
+- Tests de conexión implementados y pasando
+- Tests de RLS implementados y validando seguridad
+- Tests de migraciones EF Core funcionando
+- Tests de performance implementados
+- Métricas de performance documentadas
+- Tests de integración funcionando
 
 ---
 

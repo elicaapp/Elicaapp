@@ -28,17 +28,38 @@
 - [ ] Configurar ESLint y Prettier
 - [ ] Configurar estructura de carpetas
 
-**Tareas Técnicas**:
+**Tareas Técnicas Detalladas**:
 - [ ] `npx create-expo-app ElicaApp --template blank-typescript`
+- [ ] `cd ElicaApp`
 - [ ] Instalar NativeWind: `npm install nativewind`
-- [ ] Configurar tailwind.config.js
-- [ ] Configurar estructura: src/{components,screens,services,store,utils}
+- [ ] Instalar dev dependencies: `npm install --save-dev tailwindcss`
+- [ ] Crear tailwind.config.js con configuración para React Native
+- [ ] Configurar babel.config.js para NativeWind
+- [ ] Instalar ESLint: `npm install --save-dev @typescript-eslint/eslint-plugin @typescript-eslint/parser eslint eslint-plugin-react eslint-plugin-react-hooks`
+- [ ] Crear .eslintrc.js con reglas para React Native
+- [ ] Instalar Prettier: `npm install --save-dev prettier`
+- [ ] Crear .prettierrc con configuración
+- [ ] Crear estructura de carpetas: src/{components,screens,services,store,utils,types,hooks}
+- [ ] Configurar tsconfig.json con paths para imports
+- [ ] Crear archivo de configuración de ambiente (.env)
 
 **Entregables**:
-- Proyecto Expo configurado
-- NativeWind funcionando
-- Linting configurado
-- Estructura de carpetas creada
+- Proyecto Expo creado con TypeScript
+- NativeWind configurado y funcionando
+- ESLint y Prettier configurados
+- Estructura de carpetas organizada
+- TypeScript configurado con paths
+- Archivo de ambiente configurado
+
+
+
+**Entregables**:
+- Proyecto Expo creado con TypeScript
+- NativeWind configurado y funcionando
+- ESLint y Prettier configurados
+- Estructura de carpetas organizada
+- TypeScript configurado con paths
+- Archivo de ambiente configurado
 
 **Día 2: Navegación Base**
 - [ ] Instalar React Navigation v6
@@ -46,16 +67,37 @@
 - [ ] Crear pantallas base
 - [ ] Implementar navegación entre pantallas
 
-**Tareas Técnicas**:
-- [ ] `npm install @react-navigation/native @react-navigation/stack`
-- [ ] Configurar NavigationContainer
-- [ ] Crear pantallas: Login, Register, Home, Profile
-- [ ] Implementar navegación básica
+**Tareas Técnicas Detalladas**:
+- [ ] Instalar React Navigation: `npm install @react-navigation/native @react-navigation/stack`
+- [ ] Instalar dependencias: `npm install react-native-screens react-native-safe-area-context`
+- [ ] Instalar gestos: `npm install react-native-gesture-handler`
+- [ ] Configurar NavigationContainer en App.tsx
+- [ ] Crear Stack Navigator principal
+- [ ] Crear pantalla LoginScreen en src/screens/LoginScreen.tsx
+- [ ] Crear pantalla RegisterScreen en src/screens/RegisterScreen.tsx
+- [ ] Crear pantalla HomeScreen en src/screens/HomeScreen.tsx
+- [ ] Crear pantalla ProfileScreen en src/screens/ProfileScreen.tsx
+- [ ] Configurar navegación entre pantallas
+- [ ] Crear tipos de navegación en src/types/navigation.ts
+- [ ] Implementar navegación básica con navigation.navigate()
 
 **Entregables**:
-- Navegación funcionando
-- Pantallas base creadas
-- Navegación entre pantallas
+- React Navigation v6 instalado y configurado
+- Navegación stack funcionando
+- Pantallas base creadas (Login, Register, Home, Profile)
+- Navegación entre pantallas implementada
+- Tipos de navegación definidos
+- Navegación básica funcionando
+
+
+
+**Entregables**:
+- React Navigation v6 instalado y configurado
+- Navegación stack funcionando
+- Pantallas base creadas (Login, Register, Home, Profile)
+- Navegación entre pantallas implementada
+- Tipos de navegación definidos
+- Navegación básica funcionando
 
 **Día 3: Componentes UI Base**
 - [ ] Crear componente Button
@@ -63,16 +105,37 @@
 - [ ] Crear componente Card
 - [ ] Crear componente Header
 
-**Tareas Técnicas**:
-- [ ] Componente Button con variantes (primary, secondary, outline)
-- [ ] Componente Input con validación
-- [ ] Componente Card reutilizable
-- [ ] Componente Header con navegación
+**Tareas Técnicas Detalladas**:
+- [ ] Crear src/components/ui/Button.tsx con variantes (primary, secondary, outline)
+- [ ] Implementar props: variant, size, disabled, onPress, children
+- [ ] Crear src/components/ui/Input.tsx con validación
+- [ ] Implementar props: placeholder, value, onChangeText, error, label
+- [ ] Crear src/components/ui/Card.tsx reutilizable
+- [ ] Implementar props: title, subtitle, children, onPress
+- [ ] Crear src/components/ui/Header.tsx con navegación
+- [ ] Implementar props: title, showBack, rightComponent
+- [ ] Crear src/components/ui/index.ts para exportar todos los componentes
+- [ ] Implementar estilos con NativeWind para cada componente
+- [ ] Crear tipos TypeScript para props de cada componente
+- [ ] Implementar validación de props con PropTypes o TypeScript
 
 **Entregables**:
-- Biblioteca de componentes base
-- Componentes con NativeWind
-- Props tipados con TypeScript
+- Componente Button con variantes implementado
+- Componente Input con validación implementado
+- Componente Card reutilizable implementado
+- Componente Header con navegación implementado
+- Estilos con NativeWind aplicados
+- Tipos TypeScript definidos para todos los componentes
+
+
+
+**Entregables**:
+- Componente Button con variantes implementado
+- Componente Input con validación implementado
+- Componente Card reutilizable implementado
+- Componente Header con navegación implementado
+- Estilos con NativeWind aplicados
+- Tipos TypeScript definidos para todos los componentes
 
 **Día 4: Estado Global con Zustand**
 - [ ] Instalar Zustand
@@ -80,16 +143,37 @@
 - [ ] Crear store de usuario
 - [ ] Integrar stores con componentes
 
-**Tareas Técnicas**:
-- [ ] `npm install zustand`
-- [ ] Store auth: {user, isAuthenticated, login, logout}
-- [ ] Store user: {profile, updateProfile}
-- [ ] Conectar stores con React Navigation
+**Tareas Técnicas Detalladas**:
+- [ ] Instalar Zustand: `npm install zustand`
+- [ ] Crear src/store/authStore.ts con estado: user, isAuthenticated, token
+- [ ] Implementar métodos: login, logout, setUser, clearUser
+- [ ] Crear src/store/userStore.ts con estado: profile, preferences, settings
+- [ ] Implementar métodos: updateProfile, updatePreferences, updateSettings
+- [ ] Crear src/store/index.ts para exportar todos los stores
+- [ ] Integrar authStore con React Navigation para protección de rutas
+- [ ] Crear hook personalizado useAuth en src/hooks/useAuth.ts
+- [ ] Crear hook personalizado useUser en src/hooks/useUser.ts
+- [ ] Implementar persistencia de estado con AsyncStorage
+- [ ] Crear tipos TypeScript para estado de los stores
+- [ ] Implementar middleware de logging para stores
 
 **Entregables**:
-- Stores Zustand configurados
-- Estado global funcionando
-- Integración con navegación
+- Zustand instalado y configurado
+- Store de autenticación implementado
+- Store de usuario implementado
+- Hooks personalizados creados
+- Integración con React Navigation funcionando
+- Persistencia de estado implementada
+
+
+
+**Entregables**:
+- Zustand instalado y configurado
+- Store de autenticación implementado
+- Store de usuario implementado
+- Hooks personalizados creados
+- Integración con React Navigation funcionando
+- Persistencia de estado implementada
 
 **Día 5: Testing Base**
 - [ ] Configurar React Native Testing Library
@@ -97,16 +181,38 @@
 - [ ] Crear tests para stores
 - [ ] Configurar Jest
 
-**Tareas Técnicas**:
-- [ ] `npm install --save-dev @testing-library/react-native`
-- [ ] Tests para Button, Input, Card
-- [ ] Tests para stores de Zustand
-- [ ] Configurar jest.config.js
+**Tareas Técnicas Detalladas**:
+- [ ] Instalar testing dependencies: `npm install --save-dev @testing-library/react-native @testing-library/jest-native`
+- [ ] Instalar Jest: `npm install --save-dev jest jest-expo`
+- [ ] Configurar jest.config.js para React Native
+- [ ] Crear src/__tests__/components/Button.test.tsx
+- [ ] Crear src/__tests__/components/Input.test.tsx
+- [ ] Crear src/__tests__/components/Card.test.tsx
+- [ ] Crear src/__tests__/stores/authStore.test.ts
+- [ ] Crear src/__tests__/stores/userStore.test.ts
+- [ ] Crear src/__tests__/hooks/useAuth.test.ts
+- [ ] Crear src/__tests__/hooks/useUser.test.ts
+- [ ] Configurar setupTests.ts para configuración global de tests
+- [ ] Implementar mocks para AsyncStorage y React Navigation
+- [ ] Ejecutar tests y verificar que pasen
 
 **Entregables**:
-- Testing configurado
-- Tests unitarios pasando
-- Code coverage básico
+- React Native Testing Library configurado
+- Jest configurado para React Native
+- Tests unitarios para componentes implementados
+- Tests unitarios para stores implementados
+- Tests unitarios para hooks implementados
+- Mocks configurados para dependencias externas
+
+
+
+**Entregables**:
+- React Native Testing Library configurado
+- Jest configurado para React Native
+- Tests unitarios para componentes implementados
+- Tests unitarios para stores implementados
+- Tests unitarios para hooks implementados
+- Mocks configurados para dependencias externas
 
 #### **Semana 2: Funcionalidades Core**
 
@@ -116,16 +222,37 @@
 - [ ] Conectar con store de auth
 - [ ] Validaciones de entrada
 
-**Tareas Técnicas**:
-- [ ] Formulario con email y password
-- [ ] Validaciones con react-hook-form
-- [ ] Integración con Zustand auth store
-- [ ] Manejo de errores
+**Tareas Técnicas Detalladas**:
+- [ ] Instalar react-hook-form: `npm install react-hook-form`
+- [ ] Instalar validación: `npm install yup @hookform/resolvers`
+- [ ] Crear esquema de validación en src/schemas/authSchemas.ts
+- [ ] Implementar formulario de login con react-hook-form
+- [ ] Conectar Input y Button components al formulario
+- [ ] Implementar validación en tiempo real con yup
+- [ ] Conectar formulario con authStore usando useAuth hook
+- [ ] Implementar manejo de errores de autenticación
+- [ ] Agregar loading state durante login
+- [ ] Implementar "Recordar sesión" con AsyncStorage
+- [ ] Agregar navegación a pantalla de registro
+- [ ] Implementar tests unitarios para LoginScreen
 
 **Entregables**:
-- Pantalla de login funcional
-- Validaciones implementadas
-- Integración con estado global
+- Pantalla de login con UI implementada
+- Formulario conectado con react-hook-form
+- Validaciones implementadas con yup
+- Integración con authStore funcionando
+- Manejo de errores implementado
+- Loading state y "Recordar sesión" funcionando
+
+
+
+**Entregables**:
+- Pantalla de login con UI implementada
+- Formulario conectado con react-hook-form
+- Validaciones implementadas con yup
+- Integración con authStore funcionando
+- Manejo de errores implementado
+- Loading state y "Recordar sesión" funcionando
 
 **Día 7: Pantalla de Registro**
 - [ ] Diseñar UI de registro
@@ -133,16 +260,37 @@
 - [ ] Validaciones de registro
 - [ ] Integración con backend
 
-**Tareas Técnicas**:
-- [ ] Formulario: nombre, email, password, confirmPassword
-- [ ] Validaciones de contraseña
-- [ ] Integración con API de registro
-- [ ] Manejo de respuestas del servidor
+**Tareas Técnicas Detalladas**:
+- [ ] Crear esquema de validación para registro en authSchemas.ts
+- [ ] Implementar formulario de registro con react-hook-form
+- [ ] Agregar campos: nombre, email, password, confirmPassword
+- [ ] Implementar validación de contraseña fuerte (mínimo 8 caracteres, mayúsculas, números)
+- [ ] Implementar validación de confirmación de contraseña
+- [ ] Conectar formulario con authStore para registro
+- [ ] Implementar manejo de errores de validación del backend
+- [ ] Agregar loading state durante registro
+- [ ] Implementar navegación automática a login después de registro exitoso
+- [ ] Agregar validación de email único
+- [ ] Implementar tests unitarios para RegisterScreen
+- [ ] Crear mock de API para tests
 
 **Entregables**:
-- Pantalla de registro funcional
-- Validaciones robustas
-- Integración con backend
+- Pantalla de registro con UI implementada
+- Formulario completo con todos los campos
+- Validaciones robustas implementadas
+- Integración con authStore funcionando
+- Manejo de errores del backend implementado
+- Navegación automática después de registro exitoso
+
+
+
+**Entregables**:
+- Pantalla de registro con UI implementada
+- Formulario completo con todos los campos
+- Validaciones robustas implementadas
+- Integración con authStore funcionando
+- Manejo de errores del backend implementado
+- Navegación automática después de registro exitoso
 
 **Día 8: Pantalla Principal (Home)**
 - [ ] Diseñar dashboard principal
@@ -150,16 +298,37 @@
 - [ ] Búsqueda y filtros
 - [ ] Navegación a detalles
 
-**Tareas Técnicas**:
-- [ ] Lista de servicios con FlatList
-- [ ] Búsqueda con TextInput
-- [ ] Filtros por categoría
-- [ ] Navegación a ServiceDetail
+**Tareas Técnicas Detalladas**:
+- [ ] Crear componente ServiceCard en src/components/ServiceCard.tsx
+- [ ] Implementar FlatList para lista de servicios
+- [ ] Crear componente SearchBar en src/components/SearchBar.tsx
+- [ ] Implementar búsqueda en tiempo real con debounce
+- [ ] Crear componente FilterChips en src/components/FilterChips.tsx
+- [ ] Implementar filtros por categoría, precio, duración
+- [ ] Crear hook useServices en src/hooks/useServices.ts
+- [ ] Implementar paginación infinita para lista de servicios
+- [ ] Agregar pull-to-refresh para actualizar lista
+- [ ] Implementar navegación a ServiceDetailScreen
+- [ ] Crear loading states y empty states
+- [ ] Implementar tests unitarios para HomeScreen
 
 **Entregables**:
-- Dashboard principal funcional
-- Lista de servicios
-- Búsqueda y filtros
+- Dashboard principal con UI implementada
+- Lista de servicios con FlatList funcionando
+- Búsqueda en tiempo real implementada
+- Filtros por categoría implementados
+- Paginación infinita funcionando
+- Navegación a detalles de servicio implementada
+
+
+
+**Entregables**:
+- Dashboard principal con UI implementada
+- Lista de servicios con FlatList funcionando
+- Búsqueda en tiempo real implementada
+- Filtros por categoría implementados
+- Paginación infinita funcionando
+- Navegación a detalles de servicio implementada
 
 **Día 9: Pantalla de Perfil**
 - [ ] Diseñar perfil de usuario
@@ -167,16 +336,37 @@
 - [ ] Configuraciones de la app
 - [ ] Cerrar sesión
 
-**Tareas Técnicas**:
-- [ ] Mostrar información del usuario
-- [ ] Formulario de edición
-- [ ] Configuraciones (notificaciones, tema)
-- [ ] Botón de logout
+**Tareas Técnicas Detalladas**:
+- [ ] Crear componente ProfileHeader en src/components/ProfileHeader.tsx
+- [ ] Crear componente ProfileSection en src/components/ProfileSection.tsx
+- [ ] Implementar formulario de edición de perfil con react-hook-form
+- [ ] Agregar campos editables: nombre, email, teléfono, dirección
+- [ ] Implementar selector de foto de perfil con expo-image-picker
+- [ ] Crear componente SettingsItem en src/components/SettingsItem.tsx
+- [ ] Implementar configuraciones: notificaciones, tema, idioma
+- [ ] Conectar configuraciones con userStore
+- [ ] Implementar botón de cerrar sesión con confirmación
+- [ ] Agregar navegación a pantallas de configuración avanzada
+- [ ] Implementar persistencia de configuraciones
+- [ ] Crear tests unitarios para ProfileScreen
 
 **Entregables**:
-- Perfil de usuario funcional
-- Edición de información
-- Configuraciones básicas
+- Pantalla de perfil con UI implementada
+- Formulario de edición de perfil funcionando
+- Selector de foto de perfil implementado
+- Configuraciones de la app implementadas
+- Botón de cerrar sesión funcionando
+- Persistencia de configuraciones implementada
+
+
+
+**Entregables**:
+- Pantalla de perfil con UI implementada
+- Formulario de edición de perfil funcionando
+- Selector de foto de perfil implementado
+- Configuraciones de la app implementadas
+- Botón de cerrar sesión funcionando
+- Persistencia de configuraciones implementada
 
 **Día 10: Refinamiento y Testing**
 - [ ] Tests de integración
@@ -184,16 +374,37 @@
 - [ ] Refactoring de código
 - [ ] Documentación de componentes
 
-**Tareas Técnicas**:
-- [ ] Tests E2E con Detox (básico)
-- [ ] Medir performance de renderizado
-- [ ] Refactorizar componentes
-- [ ] Documentar props y uso
+**Tareas Técnicas Detalladas**:
+- [ ] Ejecutar todos los tests unitarios y verificar cobertura
+- [ ] Crear tests de integración para flujos completos
+- [ ] Implementar tests de performance con React DevTools Profiler
+- [ ] Medir tiempo de renderizado de componentes principales
+- [ ] Identificar y optimizar re-renders innecesarios
+- [ ] Refactorizar código duplicado en componentes
+- [ ] Mejorar estructura de carpetas y organización
+- [ ] Documentar props y uso de cada componente
+- [ ] Crear Storybook para documentación visual de componentes
+- [ ] Implementar tests E2E básicos con Detox
+- [ ] Optimizar imports y bundle size
+- [ ] Crear guía de contribución para desarrolladores
 
 **Entregables**:
-- Tests de integración
-- Performance optimizada
-- Código refactorizado
+- Todos los tests unitarios pasando
+- Tests de integración implementados
+- Performance testing implementado
+- Código refactorizado y optimizado
+- Documentación de componentes completa
+- Storybook configurado y funcionando
+
+
+
+**Entregables**:
+- Todos los tests unitarios pasando
+- Tests de integración implementados
+- Performance testing implementado
+- Código refactorizado y optimizado
+- Documentación de componentes completa
+- Storybook configurado y funcionando
 
 ---
 
@@ -215,16 +426,37 @@
 - [ ] Mostrar citas existentes
 - [ ] Navegación por fechas
 
-**Tareas Técnicas**:
-- [ ] `npm install react-native-calendars`
-- [ ] Calendario mensual con marcadores
-- [ ] Integración con API de citas
-- [ ] Navegación entre meses
+**Tareas Técnicas Detalladas**:
+- [ ] Instalar react-native-calendars: `npm install react-native-calendars`
+- [ ] Crear componente CalendarView en src/components/CalendarView.tsx
+- [ ] Implementar calendario mensual con marcadores de citas
+- [ ] Crear hook useAppointments en src/hooks/useAppointments.ts
+- [ ] Implementar fetch de citas por fecha
+- [ ] Mostrar marcadores en fechas con citas
+- [ ] Implementar navegación entre meses
+- [ ] Crear componente AppointmentMarker para visualizar citas
+- [ ] Implementar selección de fecha para ver citas del día
+- [ ] Agregar loading state durante fetch de citas
+- [ ] Implementar error handling para fallos de API
+- [ ] Crear tests unitarios para CalendarView
 
 **Entregables**:
-- Calendario funcional
-- Visualización de citas
-- Navegación por fechas
+- react-native-calendars instalado y configurado
+- Vista de calendario implementada
+- Marcadores de citas funcionando
+- Navegación entre meses implementada
+- Selección de fecha funcionando
+- Hook useAppointments implementado
+
+
+
+**Entregables**:
+- react-native-calendars instalado y configurado
+- Vista de calendario implementada
+- Marcadores de citas funcionando
+- Navegación entre meses implementada
+- Selección de fecha funcionando
+- Hook useAppointments implementado
 
 **Día 12: Creación de Citas**
 - [ ] Formulario de nueva cita
@@ -232,16 +464,38 @@
 - [ ] Selección de fecha/hora
 - [ ] Confirmación de cita
 
-**Tareas Técnicas**:
-- [ ] Formulario: servicio, fecha, hora, notas
-- [ ] Picker de fecha y hora
-- [ ] Validaciones de disponibilidad
-- [ ] Integración con API
+**Tareas Técnicas Detalladas**:
+- [ ] Crear pantalla CreateAppointmentScreen en src/screens/CreateAppointmentScreen.tsx
+- [ ] Implementar formulario con react-hook-form
+- [ ] Crear componente ServiceSelector en src/components/ServiceSelector.tsx
+- [ ] Implementar selector de servicio con búsqueda y filtros
+- [ ] Crear componente DateTimePicker en src/components/DateTimePicker.tsx
+- [ ] Implementar selector de fecha y hora con validación
+- [ ] Agregar campo de notas para la cita
+- [ ] Implementar validación de disponibilidad de horarios
+- [ ] Crear componente AppointmentSummary para confirmación
+- [ ] Implementar proceso de confirmación de cita
+- [ ] Conectar con API para crear cita
+- [ ] Implementar manejo de errores y loading states
+- [ ] Crear tests unitarios para CreateAppointmentScreen
 
 **Entregables**:
-- Formulario de citas
-- Validaciones implementadas
-- Integración con backend
+- Pantalla de creación de citas implementada
+- Formulario completo funcionando
+- Selector de servicio implementado
+- Selector de fecha y hora funcionando
+- Validación de disponibilidad implementada
+- Proceso de confirmación funcionando
+
+
+
+**Entregables**:
+- Pantalla de creación de citas implementada
+- Formulario completo funcionando
+- Selector de servicio implementado
+- Selector de fecha y hora funcionando
+- Validación de disponibilidad implementada
+- Proceso de confirmación funcionando
 
 **Día 13: Gestión de Citas**
 - [ ] Lista de citas del usuario
@@ -249,16 +503,38 @@
 - [ ] Estado de citas (confirmada, cancelada)
 - [ ] Historial de citas
 
-**Tareas Técnicas**:
-- [ ] FlatList de citas con estados
-- [ ] Acciones: cancelar, modificar
-- [ ] Filtros por estado
-- [ ] Integración con stores
+**Tareas Técnicas Detalladas**:
+- [ ] Crear pantalla AppointmentListScreen en src/screens/AppointmentListScreen.tsx
+- [ ] Implementar FlatList para lista de citas
+- [ ] Crear componente AppointmentItem en src/components/AppointmentItem.tsx
+- [ ] Mostrar información: servicio, fecha, hora, estado, precio
+- [ ] Implementar filtros por estado: todas, confirmadas, canceladas, completadas
+- [ ] Crear componente AppointmentActions en src/components/AppointmentActions.tsx
+- [ ] Implementar acciones: cancelar, modificar, confirmar
+- [ ] Crear modal de confirmación para cancelar cita
+- [ ] Implementar modificación de citas (fecha/hora)
+- [ ] Crear pantalla AppointmentHistoryScreen para historial
+- [ ] Implementar paginación para historial de citas
+- [ ] Agregar búsqueda y filtros por período
+- [ ] Crear tests unitarios para gestión de citas
 
 **Entregables**:
-- Gestión completa de citas
-- Estados y acciones
-- Historial funcional
+- Pantalla de lista de citas implementada
+- Componente AppointmentItem funcionando
+- Acciones de citas implementadas
+- Modal de confirmación funcionando
+- Modificación de citas implementada
+- Historial de citas funcionando
+
+
+
+**Entregables**:
+- Pantalla de lista de citas implementada
+- Componente AppointmentItem funcionando
+- Acciones de citas implementadas
+- Modal de confirmación funcionando
+- Modificación de citas implementada
+- Historial de citas funcionando
 
 **Día 14: Dashboard de Negocio**
 - [ ] Vista de propietario de negocio
@@ -266,16 +542,38 @@
 - [ ] Lista de citas del negocio
 - [ ] Gestión de servicios
 
-**Tareas Técnicas**:
-- [ ] Dashboard con métricas
-- [ ] Lista de citas del negocio
-- [ ] CRUD de servicios
-- [ ] Estadísticas en tiempo real
+**Tareas Técnicas Detalladas**:
+- [ ] Crear pantalla BusinessDashboardScreen en src/screens/BusinessDashboardScreen.tsx
+- [ ] Crear componente StatsCard en src/components/StatsCard.tsx
+- [ ] Implementar métricas: total de citas, ingresos, clientes nuevos
+- [ ] Crear componente RevenueChart en src/components/RevenueChart.tsx
+- [ ] Implementar gráfico de ingresos por período
+- [ ] Crear componente BusinessAppointmentList en src/components/BusinessAppointmentList.tsx
+- [ ] Mostrar lista de citas del negocio con filtros
+- [ ] Implementar acciones: confirmar, cancelar, completar cita
+- [ ] Crear componente ServiceManagement en src/components/ServiceManagement.tsx
+- [ ] Implementar CRUD de servicios del negocio
+- [ ] Agregar filtros por período y estado
+- [ ] Implementar búsqueda en citas del negocio
+- [ ] Crear tests unitarios para BusinessDashboardScreen
 
 **Entregables**:
-- Dashboard de negocio
-- Gestión de servicios
-- Estadísticas básicas
+- Pantalla de dashboard de negocio implementada
+- Métricas y estadísticas funcionando
+- Gráfico de ingresos implementado
+- Lista de citas del negocio funcionando
+- Gestión de servicios implementada
+- Filtros y búsqueda funcionando
+
+
+
+**Entregables**:
+- Pantalla de dashboard de negocio implementada
+- Métricas y estadísticas funcionando
+- Gráfico de ingresos implementado
+- Lista de citas del negocio funcionando
+- Gestión de servicios implementada
+- Filtros y búsqueda funcionando
 
 **Día 15: Notificaciones Push**
 - [ ] Configurar Expo Notifications
@@ -283,16 +581,38 @@
 - [ ] Notificaciones push del servidor
 - [ ] Configuraciones de notificaciones
 
-**Tareas Técnicas**:
-- [ ] `expo install expo-notifications`
-- [ ] Notificaciones locales para citas
-- [ ] Integración con Supabase
-- [ ] Permisos y configuraciones
+**Tareas Técnicas Detalladas**:
+- [ ] Instalar expo-notifications: `expo install expo-notifications`
+- [ ] Configurar permisos de notificaciones en app.json
+- [ ] Crear servicio NotificationService en src/services/NotificationService.ts
+- [ ] Implementar solicitud de permisos de notificaciones
+- [ ] Crear notificaciones locales para recordatorios de citas
+- [ ] Implementar notificaciones push del servidor
+- [ ] Crear componente NotificationSettings en src/components/NotificationSettings.tsx
+- [ ] Implementar configuraciones: citas, promociones, recordatorios
+- [ ] Crear hook useNotifications en src/hooks/useNotifications.ts
+- [ ] Implementar manejo de notificaciones recibidas
+- [ ] Agregar navegación a pantalla desde notificación
+- [ ] Implementar tests unitarios para NotificationService
+- [ ] Configurar notificaciones en tiempo real con Supabase
 
 **Entregables**:
-- Sistema de notificaciones
-- Notificaciones push
-- Configuraciones de usuario
+- Expo Notifications configurado y funcionando
+- Notificaciones locales implementadas
+- Notificaciones push del servidor funcionando
+- Configuraciones de notificaciones implementadas
+- Hook useNotifications funcionando
+- Navegación desde notificaciones implementada
+
+
+
+**Entregables**:
+- Expo Notifications configurado y funcionando
+- Notificaciones locales implementadas
+- Notificaciones push del servidor funcionando
+- Configuraciones de notificaciones implementadas
+- Hook useNotifications funcionando
+- Navegación desde notificaciones implementada
 
 #### **Semana 4: Optimización y Testing**
 
@@ -302,16 +622,37 @@
 - [ ] Implementar memoización
 - [ ] Optimizar imágenes
 
-**Tareas Técnicas**:
-- [ ] React.memo para componentes
-- [ ] useMemo y useCallback
-- [ ] Lazy loading de pantallas
-- [ ] Optimización de imágenes
+**Tareas Técnicas Detalladas**:
+- [ ] Implementar React.memo para componentes que no cambian frecuentemente
+- [ ] Usar useMemo para cálculos costosos en componentes
+- [ ] Implementar useCallback para funciones que se pasan como props
+- [ ] Crear hook useLazyLoading para pantallas grandes
+- [ ] Implementar lazy loading de pantallas con React.lazy
+- [ ] Optimizar FlatList con getItemLayout y removeClippedSubviews
+- [ ] Implementar virtualización para listas largas
+- [ ] Optimizar imágenes con expo-image y cache
+- [ ] Implementar lazy loading de imágenes
+- [ ] Usar React DevTools Profiler para identificar bottlenecks
+- [ ] Implementar debounce en búsquedas y filtros
+- [ ] Crear tests de performance para componentes críticos
 
 **Entregables**:
-- Performance optimizada
-- Re-renders minimizados
-- Lazy loading implementado
+- Lazy loading implementado para pantallas
+- Re-renders optimizados con React.memo
+- Memoización implementada con useMemo y useCallback
+- FlatList optimizada con virtualización
+- Imágenes optimizadas con lazy loading
+- Tests de performance implementados
+
+
+
+**Entregables**:
+- Lazy loading implementado para pantallas
+- Re-renders optimizados con React.memo
+- Memoización implementada con useMemo y useCallback
+- FlatList optimizada con virtualización
+- Imágenes optimizadas con lazy loading
+- Tests de performance implementados
 
 **Día 17: Testing Avanzado**
 - [ ] Tests E2E con Detox
@@ -319,16 +660,38 @@
 - [ ] Tests de accesibilidad
 - [ ] Code coverage 80%+
 
-**Tareas Técnicas**:
-- [ ] Configurar Detox
-- [ ] Tests de flujos completos
-- [ ] Tests de accesibilidad
-- [ ] Reportes de coverage
+**Tareas Técnicas Detalladas**:
+- [ ] Instalar Detox: `npm install --save-dev detox`
+- [ ] Configurar Detox para iOS y Android
+- [ ] Crear tests E2E para flujo de login completo
+- [ ] Crear tests E2E para flujo de creación de cita
+- [ ] Crear tests E2E para flujo de gestión de negocio
+- [ ] Implementar tests de performance con React DevTools Profiler
+- [ ] Medir tiempo de renderizado de pantallas principales
+- [ ] Implementar tests de accesibilidad con @testing-library/jest-native
+- [ ] Verificar soporte para lectores de pantalla
+- [ ] Configurar cobertura de código con Jest
+- [ ] Ejecutar cobertura y analizar áreas sin cubrir
+- [ ] Crear tests adicionales para alcanzar 80% de cobertura
+- [ ] Configurar reportes de cobertura en CI/CD
 
 **Entregables**:
-- Tests E2E funcionando
-- Coverage objetivo alcanzado
-- Tests de accesibilidad
+- Detox configurado y funcionando
+- Tests E2E para flujos principales implementados
+- Tests de performance implementados
+- Tests de accesibilidad implementados
+- Code coverage 80%+ alcanzado
+- Reportes de cobertura configurados
+
+
+
+**Entregables**:
+- Detox configurado y funcionando
+- Tests E2E para flujos principales implementados
+- Tests de performance implementados
+- Tests de accesibilidad implementados
+- Code coverage 80%+ alcanzado
+- Reportes de cobertura configurados
 
 **Día 18: CI/CD Pipeline**
 - [ ] Configurar GitHub Actions
@@ -336,16 +699,37 @@
 - [ ] Build automatizado
 - [ ] Deploy a stores
 
-**Tareas Técnicas**:
-- [ ] Workflow de CI/CD
-- [ ] Tests en cada PR
-- [ ] Build automático con EAS
-- [ ] Deploy a TestFlight/Play Console
+**Tareas Técnicas Detalladas**:
+- [ ] Crear archivo .github/workflows/ci-cd.yml
+- [ ] Configurar trigger en push a main y pull requests
+- [ ] Configurar jobs: test, lint, build, deploy
+- [ ] Configurar tests automatizados para iOS y Android
+- [ ] Configurar linting con ESLint y Prettier
+- [ ] Configurar build automático con EAS Build
+- [ ] Configurar deploy automático a TestFlight (iOS)
+- [ ] Configurar deploy automático a Play Console (Android)
+- [ ] Configurar variables de entorno para CI/CD
+- [ ] Implementar notificaciones de build status
+- [ ] Configurar cache de dependencias para builds más rápidos
+- [ ] Crear workflow de release automático
 
 **Entregables**:
-- CI/CD funcionando
-- Builds automatizados
-- Deploy automatizado
+- Pipeline CI/CD configurado y funcionando
+- Tests automatizados ejecutándose en cada PR
+- Build automatizado con EAS configurado
+- Deploy automático a stores de test funcionando
+- Notificaciones de build configuradas
+- Cache de dependencias implementado
+
+
+
+**Entregables**:
+- Pipeline CI/CD configurado y funcionando
+- Tests automatizados ejecutándose en cada PR
+- Build automatizado con EAS configurado
+- Deploy automático a stores de test funcionando
+- Notificaciones de build configuradas
+- Cache de dependencias implementado
 
 **Día 19: Monitoreo y Analytics**
 - [ ] Implementar Sentry
@@ -353,16 +737,38 @@
 - [ ] Métricas de performance
 - [ ] Crash reporting
 
-**Tareas Técnicas**:
-- [ ] `expo install @sentry/react-native`
-- [ ] Tracking de eventos
-- [ ] Métricas de performance
-- [ ] Reportes de crashes
+**Tareas Técnicas Detalladas**:
+- [ ] Instalar Sentry: `expo install @sentry/react-native`
+- [ ] Configurar Sentry en app.json y App.tsx
+- [ ] Implementar tracking de eventos de usuario
+- [ ] Crear servicio AnalyticsService en src/services/AnalyticsService.ts
+- [ ] Implementar tracking de pantallas visitadas
+- [ ] Implementar tracking de acciones del usuario
+- [ ] Implementar métricas de performance con Performance API
+- [ ] Medir tiempo de carga de pantallas principales
+- [ ] Implementar crash reporting automático
+- [ ] Configurar alertas para crashes críticos
+- [ ] Implementar breadcrumbs para debugging
+- [ ] Crear dashboard de métricas en Sentry
+- [ ] Configurar notificaciones de errores críticos
 
 **Entregables**:
-- Monitoreo implementado
-- Analytics funcionando
-- Crash reporting activo
+- Sentry configurado y funcionando
+- Analytics de usuario implementados
+- Métricas de performance implementadas
+- Crash reporting automático funcionando
+- Dashboard de métricas configurado
+- Alertas de errores críticos configuradas
+
+
+
+**Entregables**:
+- Sentry configurado y funcionando
+- Analytics de usuario implementados
+- Métricas de performance implementadas
+- Crash reporting automático funcionando
+- Dashboard de métricas configurado
+- Alertas de errores críticos configuradas
 
 **Día 20: Sprint Review**
 - [ ] Demo de funcionalidades
@@ -370,16 +776,37 @@
 - [ ] Planning del siguiente sprint
 - [ ] Documentación final
 
-**Tareas Técnicas**:
-- [ ] Presentar sistema de citas
-- [ ] Demo de dashboard
-- [ ] Revisar métricas
-- [ ] Planificar próximas features
+**Tareas Técnicas Detalladas**:
+- [ ] Preparar demo del sistema de citas completo
+- [ ] Preparar demo del dashboard de negocio
+- [ ] Preparar demo del sistema de notificaciones
+- [ ] Revisar métricas del sprint: velocity, burndown, code coverage
+- [ ] Identificar impedimentos y lecciones aprendidas
+- [ ] Planificar Sprint 3 con historias de usuario
+- [ ] Ajustar estimaciones basado en velocidad real
+- [ ] Documentar decisiones técnicas importantes
+- [ ] Actualizar backlog del producto
+- [ ] Crear documentación de usuario final
+- [ ] Preparar presentación para stakeholders
+- [ ] Documentar bugs encontrados y plan de fixes
 
 **Entregables**:
-- Sprint completado
-- Funcionalidades demostradas
-- Plan del siguiente sprint
+- Demo de funcionalidades completada
+- Retrospectiva documentada
+- Sprint 3 planificado
+- Estimaciones ajustadas
+- Decisiones técnicas documentadas
+- Backlog del producto actualizado
+
+
+
+**Entregables**:
+- Demo de funcionalidades completada
+- Retrospectiva documentada
+- Sprint 3 planificado
+- Estimaciones ajustadas
+- Decisiones técnicas documentadas
+- Backlog del producto actualizado
 
 ---
 
