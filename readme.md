@@ -6,6 +6,26 @@ Su objetivo es ofrecer a cada negocio una herramienta que no solo optimice proce
 
 ---
 
+## 🚀 **¿Primera vez aquí? ¡Empieza por aquí!**
+
+**Si es tu primera vez viendo este proyecto, te recomendamos seguir esta ruta:**
+
+1. **📖 [Primeros Pasos](docs/PRIMEROS_PASOS.md)** - Guía completa para nuevos usuarios
+2. **📋 [Índice Principal](docs/INDICE_PRINCIPAL.md)** - Navegación organizada por áreas
+3. **🎯 [Guía del MVP](docs/GUIA_MVP.md)** - Plan de desarrollo día a día
+4. **📊 [Etapas de Desarrollo](docs/ETAPAS_DESARROLLO.md)** - Roadmap completo del proyecto
+
+**¿Eres desarrollador?** Ve directamente a tu área:
+- **🚀 [Backend](docs/backend/README.md)** - .NET Core + Clean Architecture
+- **📱 [Frontend](docs/frontend/README.md)** - React Native + Expo
+- **🗄️ [Database](docs/database/README.md)** - Supabase + PostgreSQL
+
+**¿Eres Product Owner o Scrum Master?** Ve a:
+- **👥 [Historias de Usuario](docs/HISTORIAS_USUARIO_ORGANIZADAS.md)** - Organizadas por prioridad
+- **📋 [Metodología Scrum](docs/scrum/readme.md)** - Proceso y ceremonias
+
+---
+
 ## 🎯 Propósito
 
 ElicaApp nace para resolver un problema común: la falta de soluciones de gestión que se adapten realmente a la imagen y forma de trabajar de cada negocio.  
@@ -117,23 +137,32 @@ Con ElicaApp, cada empresa puede:
 
 ## 📂 **Documentación Relacionada**
 
-- [Guía de Lógica de Negocio](docs/LOGICA_NEGOCIO.md)  
-  Explica en detalle cómo funcionan los procesos internos de ElicaApp y cómo se relacionan entre sí.
+### **🚀 Para Nuevos Usuarios**
+- [📖 Primeros Pasos](docs/PRIMEROS_PASOS.md) - **¡EMPEZAR AQUÍ!** Guía completa para nuevos usuarios
+- [📋 Índice Principal](docs/INDICE_PRINCIPAL.md) - Navegación completa del proyecto
 
-- [Modelo de Datos y Relaciones](docs/MODELO_DATOS.md)  
-  Describe la estructura de la base de datos, entidades, relaciones y normalización.
+### **🏗️ Estructura Organizada por Áreas**
+- [🚀 Backend](docs/backend/README.md) - Stack .NET Core con Clean Architecture
+- [📱 Frontend](docs/frontend/README.md) - React Native con Expo y TypeScript
+- [🗄️ Database](docs/database/README.md) - Supabase con PostgreSQL y Entity Framework
 
-- [Hoja de Ruta de Funcionalidades](docs/ROADMAP.md)  
-  Presenta las fases de desarrollo, prioridades y evolución planificada de la plataforma.
+### **📋 Documentación General**
+- [📊 Etapas de Desarrollo](docs/ETAPAS_DESARROLLO.md) - Plan detallado por etapas y sprints
+- [🎯 Guía del MVP](docs/GUIA_MVP.md) - Desarrollo día a día del MVP
+- [👥 Historias de Usuario](docs/HISTORIAS_USUARIO_ORGANIZADAS.md) - Historias organizadas por prioridad
+- [📚 Versionamiento](docs/VERSIONAMIENTO_DOCUMENTACION.md) - Sistema de versionado de documentación
+- [🛠️ Stack Tecnológico](docs/STACK_TECNOLOGICO.md) - Stack completo de tecnologías
+- [📱 Stack React Native](docs/STACK_REACT_NATIVE.md) - Stack detallado de React Native
+- [🗄️ Stack Supabase](docs/STACK_SUPABASE.md) - Stack detallado de Supabase
+- [📈 Mejoras Implementadas](docs/MEJORAS_IMPLEMENTADAS.md) - Resumen de todas las mejoras
+- [📋 Metodología Scrum](docs/scrum/readme.md) - Proceso Scrum del proyecto
 
-- [Guía de Implementación](docs/guia_de_implementacion/RutadeImplementación.md)  
-  Estructura técnica recomendada, stack tecnológico y estrategia de testing.
-
-- [Guía Scrum](docs/scrum/readme.md)  
-  Metodología de desarrollo ágil con historias de usuario y métricas de calidad.
-
-- [UI/UX y Mejoras](docs/UI_UX/readme.md)  
-  Estrategias de experiencia de usuario, accesibilidad y funcionalidades diferenciadoras.
+### **📖 Documentación de Negocio**
+- [📋 Lógica de Negocio](docs/LOGICA_NEGOCIO.md) - Funcionalidades core y reglas de negocio
+- [🏗️ Modelo de Datos](docs/MODELO_DATOS.md) - Estructura de base de datos y entidades
+- [📅 Roadmap](docs/ROADMAP.md) - Plan de desarrollo y fases del proyecto
+- [🎯 Guía de Implementación](docs/guia_de_implementacion/RutadeImplementación.md) - Ruta priorizada de implementación
+- [UI/UX y Mejoras](docs/UI_UX/readme.md) - Estrategias de experiencia de usuario, accesibilidad y funcionalidades diferenciadoras
 
 ---
 

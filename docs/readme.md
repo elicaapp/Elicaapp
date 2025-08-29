@@ -182,16 +182,3 @@ flowchart TD
     D --> E[Genera reporte en formato visual y tabla]
     E --> F[Opción de descargar o ver en dashboard]
 ```
-
----
-
-💡 **Recomendación para tu documentación**  
-Puedes usar estos diagramas como base y ampliar cada uno con notas sobre **reglas de negocio**, por ejemplo:  
-- Límite de citas por empleado/día.  
-- Tiempo de antelación mínima para reservar.  
-- Colores y logos almacenados siempre por `business_id`.  
-- Inventario con umbral configurable.
-
----
-
-Si quieres, en el próximo paso puedo hacer **un diagrama Entidad–Relación (ER)** completo con todas las tablas que definimos antes, para que tu equipo lo use como blueprint técnico definitivo.
