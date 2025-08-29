@@ -25,14 +25,16 @@ Organizar el trabajo de ElicaApp en iteraciones cortas para entregar valor tempr
 - [ ] Documentación de usuario actualizada
 - [ ] Registro de cambios documentado
 - [ ] Aprobación del PO
+- [ ] **Pruebas unitarias implementadas y pasando**
+- [ ] **Pruebas de integración completadas**
+- [ ] **Cobertura de código > 80%**
+- [ ] **Review de código aprobado**
+- [ ] **Métricas de performance validadas**
 
 ## Enlaces rápidos
 - [Product Backlog](./Product_Backlog.md)
 - [Sprint 01](./Sprints/Sprint-01.md)
 - [Plantilla de Historia](./Templates/Story_Template.md)
-
-
-Vamos a estructurar esto como una **guía práctica para trabajar con Scrum** enfocada en **ElicaApp** y su **MVP**, y vamos a dejar ya listas las **historias de usuario** que podemos convertir en tickets para el tablero (Jira, Trello, ClickUp, etc.).
 
 ---
 
@@ -149,6 +151,83 @@ Formato:
 - **Dividir**: Si una historia es muy grande, crear subtareas técnicas o historias más pequeñas.
 - **Definición de Hecho (DoD)**: Cada historia debe estar probada, documentada y lista para producción.
 - **Feedback temprano**: Muestrar avances al PO y usuarios clave en cada Sprint Review.
+
+---
+
+## 🧪 **Estrategia de Testing Integrada en Scrum**
+
+### **Testing por Capas en cada Sprint**
+1. **Unitario**: Implementar junto con el código de cada historia
+2. **Integración**: Validar al final de cada sprint
+3. **E2E**: Ejecutar antes de cada Sprint Review
+4. **Performance**: Monitorear continuamente en producción
+
+### **Herramientas de Testing por Sprint**
+- **Sprint 1-2**: Jest + React Testing Library (unitario)
+- **Sprint 3-4**: Supertest + MSW (integración)
+- **Sprint 5-6**: Playwright (E2E)
+- **Sprint 7-8**: Lighthouse + WebPageTest (performance)
+
+### **Métricas de Calidad por Sprint**
+- **Cobertura de código**: Incrementar 10% por sprint
+- **Tiempo de respuesta**: < 100ms para operaciones críticas
+- **Tasa de bugs**: < 2% en historias entregadas
+- **Performance score**: > 90 en Lighthouse
+
+---
+
+## 📊 **Métricas de Scrum para ElicaApp**
+
+### **Velocidad del Equipo**
+- **Story Points por sprint**: Objetivo 20-30 puntos
+- **Velocidad promedio**: Calcular en los últimos 3 sprints
+- **Burndown chart**: Actualizar diariamente
+
+### **Calidad del Producto**
+- **Defectos por sprint**: < 5 bugs críticos
+- **Tiempo de resolución**: < 24 horas para bugs críticos
+- **Satisfacción del usuario**: NPS > 50 en cada Sprint Review
+
+### **Eficiencia del Proceso**
+- **Sprint Goal completion**: > 90% de sprints exitosos
+- **Impediment resolution**: < 4 horas promedio
+- **Team happiness**: > 7/10 en retrospectivas
+
+---
+
+## 🔄 **Proceso de Refinamiento Continuo**
+
+### **Backlog Refinement (cada 2 semanas)**
+- **Estimar historias** usando Planning Poker
+- **Dividir historias grandes** en subtareas manejables
+- **Priorizar según valor** y dependencias técnicas
+- **Validar criterios de aceptación** con stakeholders
+
+### **Definition of Ready (DoR)**
+- [ ] Historia claramente definida y entendida
+- [ ] Criterios de aceptación específicos y medibles
+- [ ] Dependencias identificadas y resueltas
+- [ ] Estimación de esfuerzo realizada
+- [ ] **Casos de prueba definidos**
+- [ ] **Requisitos de testing identificados**
+- [ ] **Criterios de performance establecidos**
+
+---
+
+## 🚀 **Mejoras Continuas del Proceso**
+
+### **Retrospectivas Efectivas**
+- **Qué funcionó bien**: Identificar prácticas exitosas
+- **Qué mejorar**: Encontrar oportunidades de optimización
+- **Acciones concretas**: Definir mejoras específicas para el siguiente sprint
+- **Seguimiento**: Revisar progreso de acciones anteriores
+
+### **Adaptación del Proceso**
+- **Revisar ceremonias**: Ajustar duración y frecuencia según necesidades
+- **Optimizar herramientas**: Evaluar efectividad de herramientas de tracking
+- **Mejorar comunicación**: Identificar gaps en información y colaboración
+
+---
 
 ### Estructura de carpetas y archivos del trabajo con Scrum ###
 
