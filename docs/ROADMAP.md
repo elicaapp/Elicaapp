@@ -42,5 +42,5 @@ Planificar el desarrollo de ElicaApp en fases, priorizando impacto y experiencia
 ---
 
 ## 📂 Relación con otros documentos
-- [Lógica de Negocio](/LOGICA_NEGOCIO.md)
-- [Modelo de Datos y Relaciones](/MODELO_DATOS.md)
+- [Lógica de Negocio](LOGICA_NEGOCIO.md)
+- [Modelo de Datos y Relaciones](MODELO_DATOS.md)

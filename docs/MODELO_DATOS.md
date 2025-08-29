@@ -33,5 +33,5 @@ Definir la estructura de datos que soporta la lógica de negocio, garantizando i
 ---
 
 ## 📂 Relación con otros documentos
-- [Lógica de Negocio](/LOGICA_NEGOCIO.md)
-- [Hoja de Ruta de Funcionalidades](/ROADMAP.md)
+- [Lógica de Negocio](LOGICA_NEGOCIO.md)
+- [Hoja de Ruta de Funcionalidades](ROADMAP.md)

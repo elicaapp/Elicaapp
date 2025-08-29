@@ -31,5 +31,5 @@ La lógica de negocio de ElicaApp define cómo interactúan los distintos módul
 ---
 
 ## 📂 Relación con otros documentos
-- [Modelo de Datos y Relaciones](/MODELO_DATOS.md)
-- [Hoja de Ruta de Funcionalidades](/ROADMAP.md)
+- [Modelo de Datos y Relaciones](MODELO_DATOS.md)
+- [Hoja de Ruta de Funcionalidades](ROADMAP.md)
