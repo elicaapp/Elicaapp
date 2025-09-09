@@ -12,7 +12,7 @@ Para obtener una base sólida y representativa, se recomienda realizar entre **5
 
 1.  ¿Cuál es el nombre de su peluquería y dónde está ubicada?
 2.  ¿Cuántos años lleva operando su negocio?
-3.  ¿Cuántos empleados tiene (estilistas, recepcionistas, etc.)?
+3.  ¿Cuántos empleados tiene (estilistas, recepcionistas, etc.)? 
 4.  ¿Qué tipo de servicios ofrecen principalmente?
 5.  ¿Cuál es su horario de atención?
 
