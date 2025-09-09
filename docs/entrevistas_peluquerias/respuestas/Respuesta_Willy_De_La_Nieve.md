@@ -1,71 +1,80 @@
-1.  Nombe: Willy barber Shop.
-    Calle Leogino Martinez, #11, Santo Domingo Norte, Republica Dominicana.
+# 💈 Entrevista a Willy de la Nieve - Willy Barber Shop 08/09/2025 8:00pm.
 
-2. 12 Años.
+## ℹ️ Información General del Negocio
 
-3. Solo el dueño.
+*   **Nombre:** Willy Barber Shop
+*   **Ubicación:** Calle Leogino Martinez, #11, Santo Domingo Norte, República Dominicana.
+*   **Años de Operación:** 12 años.
+*   **Empleados:** Solo el dueño.
+*   **Horario de Atención:**
+    *   Lunes, Miércoles, Jueves y Viernes: 9:00 AM - 11:00 PM
+    *   Martes: Cerrado
+    *   Sábado: 9:00 AM - 7:00 PM
+    *   Domingo: 10:00 AM - 1:00 AM
 
-4.  - Facial: DOP$350, consiste en ponerle crema al cliente, es una tratación muy ligera y suave, no se nota mucho el cuidado que se le da.
-    - Lavado de Pelo: DOP$300, consiste en un lavado suave y limpio, se le da una shampo para eliminar el exceso de grasa y se le da un poco de linea de pelo para darle un toque de brillo.
-    - Corte de Cabello: DOP$400, consiste en cortar el cabello del cliente.
-    - Cerquillo: DOP$250, consiste en un pequeño corte de pelo.
-    - Tintado de Cejas: DOP$400, consiste en tintar las cejas del cliente.
-    - Tintado de Barba: DOP$300, consiste en tintar la barba del cliente.
-    - Los servicios a domicio son por el costo de [ Precio_normal + (Precio_normal * 0.4) + 200 = Precio_final_a_domicilio].
-    - Precio_normal: Es el precio que se le da al servicio.
-    - Precio_final_a_domicilio: Es el precio final que se le da al cliente por el servicio.
-    - (Precio_normal * 0.4): Es el 40% del precio normal.
-    - 200: Es el costo fijo de por la movilidad.
+## ✂️ Servicios Ofrecidos
 
-5.  - Lunes, Miercoles, Jueves y Viernes De 9:00am a 11:00pm.
-    - Martes Cerrado.
-    - Sabado: De 9:00am a 7:00pm.
-    - Domingo: De 10:00am a 1:00am.
+*   **Facial:** DOP$350 (Tratamiento ligero con crema).
+*   **Lavado de Pelo:** DOP$300 (Lavado suave y limpio con champú para eliminar el exceso de grasa y línea de pelo para brillo).
+*   **Corte de Cabello:** DOP$400.
+*   **Cerquillo:** DOP$250 (Pequeño corte de pelo).
+*   **Tintado de Cejas:** DOP$400.
+*   **Tintado de Barba:** DOP$300.
+*   **Servicios a Domicilio:**
+    *   **Costo:** `Precio_normal + (Precio_normal * 0.4) + 200 = Precio_final_a_domicilio`
+    *   `Precio_normal`: Precio base del servicio.
+    *   `(Precio_normal * 0.4)`: 40% adicional sobre el precio normal.
+    *   `200`: Costo fijo por movilidad.
 
-6.  - Redes Sociales. por un grupo de whatsapp.
-    - WhatsApp: 809-229-8251.
-    - Facebook: Willy De La Nieve.
-    - Los demas clientes van al local y hacen su turto.
+## 📈 Gestión Actual y Desafíos
 
-7. Nada.
+*   **Gestión de Citas:** Principalmente a través de redes sociales (grupo de WhatsApp, Facebook: Willy De La Nieve). Los demás clientes llegan directamente al local y esperan su turno.
+*   **Herramientas/Software:** Ninguno.
+*   **Desafíos Principales:**
+    *   Tratar con personas desagradables, sin educación, sin manejo de sí mismos.
+    *   Lidiar con clientes con problemas de salud, dinero, tiempo o relaciones.
+    *   Personas arrogantes, imperativas y clientes muy exigentes.
+*   **Aspectos a Automatizar/Simplificar:**
+    *   Gestión de citas.
+    *   Manejo del tiempo personal (comer).
+    *   Gestión del flujo de personas.
+    *   Control de ganancias.
+    *   Manejo de inventario.
+    *   Gestión de personal (a futuro).
+*   **Comunicación con Clientes:** Confirmaciones vía WhatsApp.
 
-8. Tratar con personas desagradables, personas sin educacion, personas sin manejo de si mismos, personas con problemas de salud, personas con problemas de dinero, personas con problemas de tiempo, personas con problemas de relacion, personas arrogante, gente imperativas, clientes muy exigentes.
+## ✨ Necesidades y Expectativas de una Aplicación
 
-9. La Gestion de las citas de los clientes, manejar mi tiempo de comer, manejar el flujo de personas, manejar las ganancias, manejo del inventario, manejo del personal a futuro.
+*   **Funcionalidades más importantes:**
+    *   ✅ Gestión de citas (reservas, cancelaciones, modificaciones) - **Importante**.
+    *   👥 Gestión de clientes (historial, preferencias).
+    *   🧑‍💼 Gestión de empleados (horarios, comisiones).
+    *   📦 Gestión de inventario (productos, stock).
+    *   📊 Reportes y estadísticas (ventas, servicios más populares).
+    *   📢 Marketing y promociones (envío de ofertas, programas de lealtad) - **Importante**.
+    *   💳 Sistema de pagos integrado - **Importante**.
+    *   🎨 Personalización de la interfaz (colores, logo) - **Importante**.
+    *   🔔 Notificaciones (recordatorios, actualizaciones) - **Importante**.
+    *   💬 Soporte al cliente (chat en vivo, correo electrónico) - **Importante**.
+    *   🔗 Integración con otras aplicaciones (Google Calendar, PayPal) - **Importante**.
+    *   Funcionalidades adicionales (chatbot, notificaciones push).
+    *   Seguridad y privacidad.
+*   **Problemas que una aplicación podría resolver:**
+    *   Atraer más clientes.
+    *   Gestionar el aumento de precios de tarifas según la demanda.
+    *   Gestionar el personal.
+*   **Disposición a Pagar:** Sí, un 15% por cada servicio realizado a través de la aplicación.
+*   **Importancia de la Intuitividad:** Muy importante, es vital para el negocio.
+*   **Características Deseadas de Otras Apps:** Ninguna por el momento.
 
-10. Confirmaciones por WhatsApp.
+## 📝 Comentarios Adicionales
 
-11. Si tuvieran una aplicación para su peluquería, ¿qué funcionalidades serían las más importantes para ustedes?
-    *   Gestión de citas (reservas, cancelaciones, modificaciones) ► Importante.
-    *   Gestión de clientes (historial, preferencias)
-    *   Gestión de empleados (horarios, comisiones)
-    *   Gestión de inventario (productos, stock)
-    *   Reportes y estadísticas (ventas, servicios más populares)
-    *   Marketing y promociones (envío de ofertas, programas de lealtad) ► Importante.
-    *   Sistema de pagos integrado ► Importante.
-    *   Personalización de la interfaz (colores, logo) ► Importante.
-    *   Notificaciones (recordatorios, actualizaciones) ► Importante.
-    *   Soporte al cliente (chat en vivo, correo electrónico) ► Importante.
-    *   Integración con otras aplicaciones (Google Calendar, PayPal) ► Importante.
-    *   Funcionalidades adicionales (chatbot, notificaciones push)
-    *   Seguridad y privacidad
-
-12. Que me traiga mas cientes, que me gestione el aumento de precios de las tarifas segun el aumento de la demanda, que me gestione el personal.
-
-13. Que se cobre un 15% por cada servicio que se realice.
-
-14. Muy importante, es la vida del negocio, si no es intuitiva, no sirve.
-
-15. Hata el momento no.
-
-16. * Quiero que si un usuario cancela halla el siguiente sistema de penalizacion.
-        - Si el en cliente cancela antes de tres dias no hay penalización.
-        - Si el cliente cancela 2 dias antes de la cita, penalizarlo con el 10% del costo del servicio.
-        - Si el cliente cancela 1 dia antes de la cita, penalizarlo con el 20% del costo del servicio.
-        - Si el cliente cancela el dia de la cita, penalizarlo con el 35% del costo del servicio.
-        - Si el cliente no cancela y no se presenta, penalizarlo por el 40%.
-        - si el cliente no se presenta en 5 minutos, la cita se cancela automaticamente.
-        - Si el cliente llega 10 minutos despues de la cita, se le cobrara el servicio mas un 30% del costo del servicio y sera atendido despues del servicio que este en curso.
-
-    * 
+*   **Sistema de Penalización por Cancelación:**
+    *   **Cancelación > 3 días antes:** No hay penalización.
+    *   **Cancelación 2 días antes:** 10% del costo del servicio.
+    *   **Cancelación 1 día antes:** 20% del costo del servicio.
+    *   **Cancelación el mismo día:** 35% del costo del servicio.
+    *   **No cancela y no se presenta:** 40% del costo del servicio.
+    *   **No se presenta en 5 minutos:** Cita cancelada automáticamente.
+    *   **Llega 10 minutos tarde:** Se le cobrará el servicio + 30% del costo del servicio y será atendido después del servicio en curso.
 
