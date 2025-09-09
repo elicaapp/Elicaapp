@@ -12,7 +12,7 @@ ElicaApp es una plataforma integral para la gestión de negocios de servicios, d
 
 ## 🚀 **¡Nuevo en el Proyecto? ¡Empieza Aquí!**
 
-### **📖 [Primeros Pasos](../PRIMEROS_PASOS.md)**
+### **📖 [Primeros Pasos](./negocio/PRIMEROS_PASOS.md)**
 *Guía completa para nuevos usuarios del proyecto*
 
 **Este documento te ayudará a:**
@@ -82,7 +82,7 @@ ElicaApp es una plataforma integral para la gestión de negocios de servicios, d
 
 ## 📋 **Documentación General del Proyecto**
 
-### **📊 [Etapas de Desarrollo](./ETAPAS_DESARROLLO.md)**
+### **📊 [Etapas de Desarrollo](./negocio/ETAPAS_DESARROLLO.md)**
 *Plan completo de desarrollo dividido en 4 etapas*
 
 - **Etapa 1**: MVP (12 semanas) - Funcionalidades core
@@ -90,7 +90,7 @@ ElicaApp es una plataforma integral para la gestión de negocios de servicios, d
 - **Etapa 3**: Expansión y Diferenciación (20 semanas)
 - **Etapa 4**: Liderazgo e Innovación (24 semanas)
 
-### **🎯 [Guía del MVP](./GUIA_MVP.md)**
+### **🎯 [Guía del MVP](./negocio/GUIA_MVP.md)**
 *Desarrollo día a día del MVP con cronograma detallado*
 
 - **Backend**: 6 semanas de desarrollo
@@ -98,7 +98,7 @@ ElicaApp es una plataforma integral para la gestión de negocios de servicios, d
 - **Base de Datos**: 2 semanas de desarrollo
 - **Integración**: 2 semanas de testing y deployment
 
-### **👥 [Historias de Usuario Organizadas](./HISTORIAS_USUARIO_ORGANIZADAS.md)**
+### **👥 [Historias de Usuario Organizadas](./negocio/HISTORIAS_USUARIO_ORGANIZADAS.md)**
 *28 historias de usuario organizadas por prioridad y sprint*
 
 - **Prioridad P0**: Funcionalidades críticas del MVP
@@ -106,7 +106,7 @@ ElicaApp es una plataforma integral para la gestión de negocios de servicios, d
 - **Prioridad P2**: Funcionalidades de valor
 - **Prioridad P3**: Funcionalidades de mejora
 
-### **📚 [Stack Tecnológico](./STACK_TECNOLOGICO.md)**
+### **📚 [Stack Tecnológico](./tecnica/STACK_TECNOLOGICO.md)**
 *Stack completo de tecnologías del proyecto*
 
 - **Backend**: .NET Core + ASP.NET Core + EF Core
@@ -119,33 +119,33 @@ ElicaApp es una plataforma integral para la gestión de negocios de servicios, d
 ## 🔗 **Navegación Rápida por Áreas**
 
 ### **🚀 Para Nuevos Usuarios**
-1. **📖 [Primeros Pasos](../PRIMEROS_PASOS.md)** - **¡EMPEZAR AQUÍ!**
+1. **📖 [Primeros Pasos](./negocio/PRIMEROS_PASOS.md)** - **¡EMPEZAR AQUÍ!**
 2. **📋 [Índice Principal](./INDICE_PRINCIPAL.md)** - Navegación completa
-3. **🎯 [Guía del MVP](./GUIA_MVP.md)** - Plan de desarrollo día a día
-4. **📊 [Etapas de Desarrollo](./ETAPAS_DESARROLLO.md)** - Roadmap completo
+3. **🎯 [Guía del MVP](./negocio/GUIA_MVP.md)** - Plan de desarrollo día a día
+4. **📊 [Etapas de Desarrollo](./negocio/ETAPAS_DESARROLLO.md)** - Roadmap completo
 
 ### **🚀 Para Desarrolladores Backend**
 1. **Empezar**: [README Backend](./backend/README.md)
 2. **Arquitectura**: [Arquitectura del Sistema](./backend/ARQUITECTURA.md)
 3. **Sprints**: [Sprints del Backend](./backend/SPRINTS_BACKEND.md)
-4. **Stack**: [Stack Tecnológico](./STACK_TECNOLOGICO.md)
+4. **Stack**: [Stack Tecnológico](./tecnica/STACK_TECNOLOGICO.md)
 
 ### **📱 Para Desarrolladores Frontend**
 1. **Empezar**: [README Frontend](./frontend/README.md)
 2. **Arquitectura**: [Arquitectura del Frontend](./frontend/ARQUITECTURA_FRONTEND.md)
 3. **Sprints**: [Sprints del Frontend](./frontend/SPRINTS_FRONTEND.md)
-4. **Stack**: [Stack React Native](./STACK_REACT_NATIVE.md)
+4. **Stack**: [Stack React Native](./tecnica/STACK_REACT_NATIVE.md)
 
 ### **🗄️ Para Desarrolladores de Base de Datos**
 1. **Empezar**: [README Database](./database/README.md)
 2. **Arquitectura**: [Arquitectura de la Base de Datos](./database/ARQUITECTURA_DB.md)
 3. **Sprints**: [Sprints de Base de Datos](./database/SPRINTS_DATABASE.md)
-4. **Stack**: [Stack de Supabase](./STACK_SUPABASE.md)
+4. **Stack**: [Stack de Supabase](./tecnica/STACK_SUPABASE.md)
 
 ### **👥 Para Product Owners y Scrum Masters**
-1. **Roadmap**: [Etapas de Desarrollo](./ETAPAS_DESARROLLO.md)
-2. **MVP**: [Guía del MVP](./GUIA_MVP.md)
-3. **Historias**: [Historias de Usuario Organizadas](./HISTORIAS_USUARIO_ORGANIZADAS.md)
+1. **Roadmap**: [Etapas de Desarrollo](./negocio/ETAPAS_DESARROLLO.md)
+2. **MVP**: [Guía del MVP](./negocio/GUIA_MVP.md)
+3. **Historias**: [Historias de Usuario Organizadas](./negocio/HISTORIAS_USUARIO_ORGANIZADAS.md)
 4. **Scrum**: [Metodología Scrum](./scrum/readme.md)
 
 ---
@@ -182,13 +182,13 @@ ElicaApp es una plataforma integral para la gestión de negocios de servicios, d
 - [Arquitectura Backend](./backend/ARQUITECTURA.md)
 - [Arquitectura Frontend](./frontend/ARQUITECTURA_FRONTEND.md)
 - [Arquitectura Base de Datos](./database/ARQUITECTURA_DB.md)
-- [Modelo de Datos](./MODELO_DATOS.md)
+- [Modelo de Datos](./tecnica/MODELO_DATOS.md)
 
 ### **📅 Sprints y Desarrollo**
 - [Sprints Backend](./backend/SPRINTS_BACKEND.md)
 - [Sprints Frontend](./frontend/SPRINTS_FRONTEND.md)
 - [Sprints Database](./database/SPRINTS_DATABASE.md)
-- [Guía MVP](./GUIA_MVP.md)
+- [Guía MVP](./negocio/GUIA_MVP.md)
 
 ### **🧪 Testing y Calidad**
 - [Testing Backend](./backend/TESTING.md)
